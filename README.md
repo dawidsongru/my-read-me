@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 OBS: To install docker-rootless (without sudo) search about it.
-First, install git, docker, docker-compose, nodejs and yarn (search how to install to your linux distro, i use Archlinux to ilustrate):
+First, install git, docker, docker-compose, nodejs, and yarn (search how to install to your Linux distro, I use Archlinux to illustrate):
 ````
 sudo pacman -Sy git docker docker-compose nodejs yarn --needed --noconfirm
 ````
