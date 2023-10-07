@@ -2,18 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-OBS: To install docker-rootless (without sudo) search about it.
-First, install git, docker, docker-compose, nodejs, and yarn (search how to install to your Linux distro, I use Archlinux to illustrate):
+OBS: To install docker-rootless (without sudo) search about it on docker docs.
+First, install neovim, git, docker, docker-compose, nodejs, and yarn (search how to install to your Linux distro, I use Archlinux to illustrate):
 ````
-sudo pacman -Sy git docker docker-compose nodejs yarn --needed --noconfirm
+sudo pacman -Sy neovim git docker docker-compose nodejs yarn --needed --noconfirm
 ````
 Now clone the git repository
 ````
 git clone https://github.com/enrell/my-read-me.git
 ````
-Run yarn install and build
+Run yarn install
 ````
-yarn install && yarn build
+yarn install
 ````
 Copy .env.local-example to .env
 ````
@@ -21,19 +21,19 @@ cp .env.local-example .env
 ````
 Change the variables to your environment
 ````
-vi .env
+nvim .env
 ````
 Create a docker network to project containers
 ````
-sudo docker network create my-read-me-network
+docker network create my-read-me-network
 ````
 Build
 ````
-sudo docker-compose build
+docker compose build
 ````
 Up the container
 ````
-sudo docker-compose up -d
+docker compose up -d
 ````
 
 
