@@ -39,6 +39,16 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
     - "6379:6379"
+  nginx:
+    image: nginx:1.25.2
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/app
+    environment:
+      - NGINX_HOST=my-read-me.com
+      - NGINX_PORT=80
 
 # Define a network, which allows containers to communicate
 # with each other, by using their container name as a hostname
