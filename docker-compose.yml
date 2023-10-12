@@ -22,6 +22,9 @@ services:
     - "3000:3000"
     networks: 
     - "my-read-me-network"
+    depends_on:
+    - postgres
+    - redis
 
   db:
     image: postgres
