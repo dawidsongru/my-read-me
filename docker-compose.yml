@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  app:
+  web:
     container_name: my-read-me-app
     build:
       context: .
