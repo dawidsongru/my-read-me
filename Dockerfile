@@ -3,7 +3,7 @@ ENV APP=/app
 
 WORKDIR ${APP}
 
-COPY yarn.lock ./
+COPY package.json yarn.lock ./
 
 RUN yarn install
 

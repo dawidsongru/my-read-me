@@ -23,7 +23,7 @@ services:
     networks: 
     - "my-read-me-network"
     depends_on:
-    - postgres
+    - db
     - redis
 
   db:
