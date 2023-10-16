@@ -5,7 +5,7 @@ services:
     container_name: my-read-me-app
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.web
 
     # # Set environment variables directly in the docker-compose file
     # environment:
