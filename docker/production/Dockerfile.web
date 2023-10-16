@@ -5,6 +5,7 @@ WORKDIR ${APP}
 
 COPY . .
 
+RUN yarn build
 RUN yarn install
 
 ENV NEXT_TELEMETRY_DISABLED 1
@@ -12,4 +13,4 @@ ENV NEXT_TELEMETRY_DISABLED 1
 # Note: Don't expose ports here, Compose will handle that for us
 
 # Start Next.js in development mode based on the preferred package manager
-CMD yarn dev
+CMD yarn start
