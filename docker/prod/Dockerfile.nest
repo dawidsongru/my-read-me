@@ -1,0 +1,13 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY ./ /app/
+
+WORKDIR /app/api/
+
+RUN yarn global add @nestjs/cli
+RUN yarn build
+RUN yarn install
+
+CMD nest start
