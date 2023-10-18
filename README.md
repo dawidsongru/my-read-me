@@ -19,6 +19,15 @@ Install dependencies
 ````
 yarn install && cd api && yarn install && cd ..
 ````
+Set .env
+````
+cp .env.local-example .env
+````
+
+Setup your secret keys
+````
+vi .env
+````
 
 Create the docker network
 ````
