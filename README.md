@@ -15,9 +15,6 @@ nodejs, yarn, docker, docker-compose and git.
 git clone https://github.com/enrell/my-read-me.git && cd my-read-me
 ````
 
-Install dependencies
-````
-yarn install && cd api && yarn install && cd ..
 ````
 Set .env
 ````
