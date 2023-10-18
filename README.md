@@ -15,7 +15,6 @@ nodejs, yarn, docker, docker-compose and git.
 git clone https://github.com/enrell/my-read-me.git && cd my-read-me
 ````
 
-````
 Set .env
 ````
 cp .env.local-example .env
