@@ -37,3 +37,5 @@ next-env.d.ts
 # nestjs
 ./api/node_modules
 ./api/dist
+./api/yarn-error.log*
+./api/yarn-debug.log*
