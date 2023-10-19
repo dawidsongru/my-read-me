@@ -34,6 +34,10 @@ Build the images
 ````
 docker compose build
 ````
+Install dev container dependencies
+````
+yarn install
+````
 
 Up containers
 ````
