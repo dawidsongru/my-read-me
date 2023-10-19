@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY . .
 
+# yarn dependencies
+# RUN yarn add examples
+
 RUN yarn install
 RUN yarn build
 
