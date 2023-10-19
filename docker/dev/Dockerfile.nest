@@ -9,8 +9,10 @@ WORKDIR /app/api/
 VOLUME /app/node_modules
 VOLUME /app/api/node_modules
 
+# yarn dependencies
+# RUN yarn add example
+
 RUN yarn global add @nestjs/cli
-#RUN yarn build
 RUN yarn install
 
 CMD nest start
