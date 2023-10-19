@@ -7,7 +7,7 @@ COPY . .
 # yarn ependencies
 # RUN yarn add example
 
-RUN yarn install
+#RUN yarn install
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
