@@ -2,8 +2,9 @@ setup:
   addons:
     - plan: heroku-postgresql
       as: DATABASE
-    - bucketeer:hobbyist
-    - heroku-redis:mini
+    - plan: bucketeer:hobbyist
+    - plan: heroku-redis:mini
+      as: REDIS
   config:
     BUCKETEER_AWS_ACCESS_KEY_ID: key
     BUCKETEER_AWS_REGION: region
