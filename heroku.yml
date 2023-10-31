@@ -1,0 +1,19 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+    - bucketeer:hobbyist
+    - heroku-redis:mini
+  config:
+    BUCKETEER_AWS_ACCESS_KEY_ID: key
+    BUCKETEER_AWS_REGION: region
+    BUCKETEER_AWS_SECRET_ACCESS_KEY: access_key
+    BUCKETEER_BUCKET_NAME: bucket_name
+    DATABASE_URL: db_url
+    REDIS_TLS_URL: TLS_URL
+    REDIS_URL: url
+    PAPERTRAIL_API_TOKEN: token
+build:
+  docker:
+    client: ./docker/prod/Dockerfile.next
+    server: ./docker/prod/Dockerfile.nest
