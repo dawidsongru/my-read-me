@@ -39,3 +39,6 @@ next-env.d.ts
 /api/dist
 /api/yarn-error.log*
 /api/yarn-debug.log*
+
+# vscode
+.vscode
