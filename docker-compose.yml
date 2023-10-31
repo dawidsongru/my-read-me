@@ -5,7 +5,7 @@ services:
     container_name: my-read-me-dev
     build:
       context: ./
-      dockerfile: ./docker/dev/Dockerfile.dev
+      dockerfile: ./docker/dev/Dockerfile.next
 
     # # Set environment variables directly in the docker-compose file
     # environment:
