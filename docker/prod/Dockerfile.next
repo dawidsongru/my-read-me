@@ -2,13 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY . .
+COPY ./ /app/
 
 # yarn dependencies
 # RUN yarn add examples
 
 RUN yarn install
-RUN yarn build
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
