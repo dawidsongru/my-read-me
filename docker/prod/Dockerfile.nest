@@ -10,8 +10,6 @@ WORKDIR /app/api/
 # RUN yarn add examples
 RUN yarn global add @nestjs/cli
 
-RUN yarn build
-
 RUN yarn install
 
 CMD nest start
