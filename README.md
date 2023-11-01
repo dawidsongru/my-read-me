@@ -43,4 +43,7 @@ Up containers
 ````
 docker compose up -d
 ````
-Access localhost:3000 in your browser.
+In a new browser tab, go to: http://localhost:3000
+````
+http://localhost:3000
+````
